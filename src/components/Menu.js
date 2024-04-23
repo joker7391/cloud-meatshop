@@ -13,12 +13,17 @@ const Menu = () => {
           <h1 className="font-extrabold text-center py-1 text-[18px] font-poppins text-[#006400]">
             {menus.name}
           </h1>
-          <img src={menus.image} alt="image" className="p-2" />
+          <motion.img
+            whileHover={{ scale: 1.1 }}
+            src={menus.image}
+            alt="image"
+            className="p-2"
+          />
           <p className="text-center font-poppins">₱{menus.price}/kg</p>
           <p className="text-center font-poppins">Stock: {menus.quantity} </p>
           <motion.button
             whileTap={{ scale: 0.9 }}
-            className="absolute bottom-0 w-full bg-black text-white rounded-b-md"
+            className="absolute bottom-0 w-full bg-black text-white rounded-b-md font-semibold"
           >
             Add to Cart
           </motion.button>

@@ -13,11 +13,6 @@ const Header = () => {
         </h1>
       </span>
       <span className="flex items-center gap-3">
-        <input
-          type="search"
-          placeholder="Search"
-          className="px-2 py-1 placeholder:text-black rounded-lg border-2 border-black"
-        />
         <motion.button
           whileTap={{ scale: 0.9 }}
           className="text-[30px] text-[#006400]"
